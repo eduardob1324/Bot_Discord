@@ -48,8 +48,10 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 #### Configurar las tareas programadas 
 - se requiere modificar el archivo ScheduledTask.java
 ```
- /tasks/ScheduledTask.java
+ src/main/java/tasks/ScheduledTask.java
 ```
+- la tarea encargada de enviar los mensajes a los mienbros del servidos los dias lunes miercoles y viernes es: **sendScheduledMessageOfDay**
+- la tarea encargada de modificar el campo **AnswerValidation** este campo se usa para validar que los usuarios enviaron una respuesta en dado caso de que no respondan antes del siguiente envio de mensaje se ejecutara la tarea **sendScheduledUpdateResponseUser** y los campos respuesta quedaran en **null**
 
 #### Compilar el proyecto
 
