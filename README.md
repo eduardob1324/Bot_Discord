@@ -24,9 +24,8 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 
 ### Descargar el dodigo base
 
-### Login
-```http
-POST /auth/login
+```http 
+   git clone https://github.com/eduardob1324/Bot_Discord.git
 ```
 
 ## Uso
