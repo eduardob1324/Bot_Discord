@@ -28,12 +28,6 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
    git clone https://github.com/eduardob1324/Bot_Discord.git
 ```
 
-#### Compilar el proyecto
-
-``` shell
-   mvn install -DskipTests=true 
-```
-
 #### Crear el servidor en discord
 - link de ayuda:  [crear un servidor](https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor)
 
@@ -51,8 +45,17 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - ahi se deben condigurar la clave del bot y el id del servidor.
 - link de ayuda: [ver id server](https://support.discord.com/hc/es/articles/206346498--D%C3%B3nde-puedo-encontrar-mi-ID-de-usuario-servidor-mensaje)
 
-  
+#### Configurar las tareas programadas 
+- se requiere modificar el archivo ScheduledTask.java
+```
+ /tasks/ScheduledTask.java
+```
 
+#### Compilar el proyecto
+
+``` shell
+   mvn install -DskipTests=true 
+```
 
 
 
