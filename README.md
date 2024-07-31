@@ -1,4 +1,4 @@
- Mi Bot para Discord
+# Mi Bot para Discord
 
 ## Descripción
 El Bot envía mensajes privados a los miembros del servidor los días lunes, miércoles y viernes mediante una tarea programada. Su propósito principal es ayudar a los usuarios a mantener el seguimiento de sus objetivos semanales mediante preguntas programadas y proporcionar ayuda en caso de ser necesario.
