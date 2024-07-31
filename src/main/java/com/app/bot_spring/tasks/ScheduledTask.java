@@ -1,4 +1,4 @@
-package com.app.bot_spring.components;
+package com.app.bot_spring.tasks;
 
 import com.app.bot_spring.controllers.BotController;
 import com.app.bot_spring.entities.MessageSend;
@@ -48,7 +48,7 @@ public class ScheduledTask extends ListenerAdapter {
      * */
 
     //@Scheduled(cron = "1 01 08 * * MON,WED,FRI")
-    @Scheduled(cron = "1 * * * * *")
+    @Scheduled(cron = "2 * * * * *")
     private void sendScheduledMessageOfDay() {
         Guild server = jda.getGuildById(dicordServer);
         if (server == null) {
@@ -69,8 +69,9 @@ public class ScheduledTask extends ListenerAdapter {
      * una respuesta. Esta tarea se ejecuta los días martes, jueves y domingo.
      **/
 
-    //@Scheduled(cron = "*/30 * * * * *")
-    @Scheduled(cron = "1 01 22 * * TUE,THU,SUN")
+
+    //@Scheduled(cron = "1 01 22 * * TUE,THU,SUN")
+    @Scheduled(cron = "1 * * * * *")
     private void sendScheduledUpdateResponseUser() {
         Iterable<MessageSend> messageSends = messageSendService.findAllAnswerValidation('1');
         for (MessageSend messageSend : messageSends) {

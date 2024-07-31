@@ -1,14 +1,30 @@
-
-version: '3.9'
-
+version: "3.9"
 services:
-  bot-spring:
-    container_name: bot-app
-    image: pee-java-app:1.0.0
+  app:
     build: .
     ports:
-      - 8080:8080
+      - "8080:8080"
+    links:
+      - DB
     environment:
       - key_bot=
       - server=
+      - url=jdbc:mysql://DB:3306/bot_db?createDatabaseIfNoExist=true&serverTimezone=UTC
+      - user=root
+      - password=1234
     restart: always
+  DB:
+    image: mysql:latest
+    ports:
+      - 3308:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_PASSWORD=1234
+      - MYSQL_DATABASE=bot_db
+    restart: always
+    #volumes:
+     # - Bd-data:/var/lib/mysql
+      # mongo -> /data/db
+      # postgres -> /var/lib/postgresql/data
+#volumes:
+#  DB-data:
