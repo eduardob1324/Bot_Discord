@@ -51,7 +51,11 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
  src/main/java/tasks/ScheduledTask.java
 ```
 - la tarea encargada de enviar los mensajes a los mienbros del servidos los dias lunes miercoles y viernes es: **sendScheduledMessageOfDay**
-- la tarea encargada de modificar el campo **AnswerValidation** este campo se usa para validar que los usuarios enviaron una respuesta en dado caso de que no respondan antes del siguiente envio de mensaje se ejecutara la tarea **sendScheduledUpdateResponseUser** y los campos respuesta quedaran en **null**
+- la tarea encargada de validar que los usuarios enviaron una respuesta es **sendScheduledUpdateResponseUser** en dado caso de que no respondan antes del siguiente envio de mensaje, los campos respuesta seran null.
+- para modificar el tiempo de ejecucion de las tarear programadas modificar el cron:
+```
+  @Scheduled(cron = "2 * * * * *")
+```
 
 #### Compilar el proyecto
 
