@@ -16,32 +16,32 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - **Viernes:** ¿Qué porcentaje de avance lograste en tu objetivo?
 
 ## Instalación y Configuración
-### reqerimientos
+#### Reqerimientos
 - JDK 17
 - mvn 3.9.8
 - Docker-desktop
 - Docker-compose
 
-### Descargar el dodigo base
+#### Descargar el dodigo base
 
 ``` shell
    git clone https://github.com/eduardob1324/Bot_Discord.git
 ```
 
-### compilar el proyecto
+#### Compilar el proyecto
 
 ``` shell
    mvn install -DskipTests=true 
 ```
 
-### Crear el servidor en discord
+#### Crear el servidor en discord
 - link de ayuda:  [crear un servidor](https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor)
 
-### Crear el bot en discord
+#### Crear el bot en discord
 - se pueden apoyar en los pasos 1 y 2 del siguiente link
 - link de ayuda:  [crear un Bot](https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord)
 
-### se requiere modificar el archivo docker-compose.yml
+#### se requiere modificar el archivo docker-compose.yml
 - el archivo se encuentra en la carpeta principal del proyecto
 - Las lineas que se requiere modificar son:
  ```
@@ -49,6 +49,9 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
  11    - server=
  ```
 - ahi se deben condigurar la clave del bot y el id del servidor.
+- link de ayuda: [ver id server](https://support.discord.com/hc/es/articles/206346498--D%C3%B3nde-puedo-encontrar-mi-ID-de-usuario-servidor-mensaje)
+
+  
 
 
 
