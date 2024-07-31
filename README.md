@@ -22,6 +22,11 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - Docker-desktop
 - Docker-compose
 
-### Descargar el dodigo fuente
+### Descargar el dodigo base
+
+### Login
+```http
+POST /auth/login
+```
 
 ## Uso
