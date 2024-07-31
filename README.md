@@ -19,4 +19,9 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 ### reqerimientos
 - JDK 17
 - mvn 3.9.8
+- Docker-desktop
+- Docker-compose
+
+### Descargar el dodigo fuente
+
 ## Uso
