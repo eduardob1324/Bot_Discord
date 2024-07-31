@@ -74,11 +74,11 @@ El Bot envía mensajes privados a los miembros del servidor los días lunes, mi�
 ```
 
 #### Para levantar el proyecto
-- Abre una terminal desde la carpeta raiz del proyecto y ejecuta;
+- Abre una terminal desde la carpeta raíz del proyecto y ejecuta;
 ``` shell
    docker-compose up
 ```
-- Una vez que la aplicacion este desplegada veras en Discord que el bot esta activo.
+- Una vez que la aplicación esté desplegada, verás en Discord que el bot está activo.
 
 ## Funcionalidades en desarrollo.
 - Creación de interfaz para poder crear eventos a los que asistan los miembros del servidor.
