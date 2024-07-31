@@ -49,7 +49,7 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
  10    - key_bot=
  11    - server=
  ```
-   
+- ahi se deben condigurar la clave del bot y el id del servidor.
 
 
 
