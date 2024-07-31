@@ -28,4 +28,10 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
    git clone https://github.com/eduardob1324/Bot_Discord.git
 ```
 
+### compilar el proyecto
+
+``` shell
+   mvn install -DskipTests=true 
+```
+
 ## Uso
