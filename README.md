@@ -41,4 +41,28 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - se pueden apoyar en los pasos 1 y 2 del siguiente link
 - link de ayuda https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord
 
+### se requiere modificar el archivo docker-compose.yml
+- el archivo se encuentra en la carpeta principal del proyecto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
