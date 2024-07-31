@@ -56,6 +56,7 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 ```
   @Scheduled(cron = "2 * * * * *")
 ```
+- link de ayuda para configuracion del cron: [cron spring](https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions)
 
 #### Compilar el proyecto
 
