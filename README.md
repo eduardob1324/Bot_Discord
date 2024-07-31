@@ -32,28 +32,28 @@ El Bot envía mensajes privados a los miembros del servidor los días lunes, mi�
 - link de ayuda:  [crear un servidor](https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor)
 
 #### Crear el bot en Discord
-- se pueden apoyar en los pasos 1 y 2 del siguiente enlace:
+- Se pueden apoyar en los pasos 1 y 2 del siguiente enlace:
 - Enlace de ayuda:  [crear un Bot](https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord)
 
 #### se requiere modificar el archivo 'docker-compose.yml'
-- el archivo se encuentra en la carpeta principal del proyecto
+- El archivo se encuentra en la carpeta principal del proyecto
 - Las lineas que se requiere modificar son:
  ```
  10    - key_bot=
  11    - server=
  ```
-- ahi se deben condigurar la clave del Bot y el ID del servidor.
+- Ahi se deben condigurar la clave del Bot y el ID del servidor.
 - link de ayuda: [ver id server](https://support.discord.com/hc/es/articles/206346498--D%C3%B3nde-puedo-encontrar-mi-ID-de-usuario-servidor-mensaje)
 
 #### Configurar las tareas programadas 
-- se requiere modificar el archivo ScheduledTask.java
+- Se requiere modificar el archivo ScheduledTask.java
 ```
  src/main/java/tasks/ScheduledTask.java
 ```
-- la tarea encargada de enviar los mensajes a los mienbros del servidos los dias lunes, miércoles y viernes es: **sendScheduledMessageOfDay**
-- la tarea encargada de validar que los usuarios enviaron una respuesta es **sendScheduledUpdateResponseUser** en dado caso de que no respondan antes del siguiente envío de mensaje, los campos respuesta serán null.
+- La tarea encargada de enviar los mensajes a los mienbros del servidos los dias lunes, miércoles y viernes es: **sendScheduledMessageOfDay**
+- La tarea encargada de validar que los usuarios enviaron una respuesta es **sendScheduledUpdateResponseUser** en dado caso de que no respondan antes del siguiente envío de mensaje, los campos respuesta serán null.
 - Las tareas porgramadas estan programadas para ejecutarse cada 2 minutos.
-- para modificar el tiempo de ejecución de las tarear programadas modificar el cron:
+- Para modificar el tiempo de ejecución de las tarear programadas modificar el cron:
 ```
   @Scheduled(cron = "2 * * * * *")
 ```
@@ -74,11 +74,11 @@ El Bot envía mensajes privados a los miembros del servidor los días lunes, mi�
 ```
 
 #### Para levantar el proyecto
-- abre una terminal desde la carpeta raiz del proyecto y ejecuta;
+- Abre una terminal desde la carpeta raiz del proyecto y ejecuta;
 ``` shell
    docker-compose up
 ```
-- una vez que la aplicacion este desplegada veras en Discord que el bot esta activo.
+- Una vez que la aplicacion este desplegada veras en Discord que el bot esta activo.
 
 ## Funcionalidades en desarrollo.
 - Creación de interfaz para poder crear eventos a los que asistan los miembros del servidor.
