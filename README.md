@@ -1,4 +1,4 @@
-# Mi Bot para Discord
+ Mi Bot para Discord
 
 ## Descripción
 El Bot envía mensajes privados a los usuarios los días lunes, miércoles y viernes mediante una tarea programada. Su propósito principal es ayudar a los usuarios a mantener el seguimiento de sus objetivos semanales mediante preguntas programadas y proporcionar ayuda en caso de ser necesario.
@@ -16,5 +16,7 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - **Viernes:** ¿Qué porcentaje de avance lograste en tu objetivo?
 
 ## Instalación y Configuración
-
+# reqerimientos
+- JDK 17
+- mvn 3.9.8
 ## Uso
