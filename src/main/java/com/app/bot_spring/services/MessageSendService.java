@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import java.util.Optional;
 
 @Service
@@ -24,7 +25,7 @@ public class MessageSendService {
     }
 
 
-    @Transactional(readOnly = true)
+   @Transactional(readOnly = true)
     public Optional<MessageSend> findByUserName(String userName) {
         return messgeSendRepository.findByUserName(userName);
     }

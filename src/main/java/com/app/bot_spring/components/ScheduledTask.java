@@ -40,7 +40,6 @@ public class ScheduledTask extends ListenerAdapter {
 
     /**@Scheduled(fixedRate = 60000)  Envía un mensaje cada 60 segundos (60000 milisegundos)
      * establecemos la hora a la que se enviaran los mensajes
-     * @Scheduled(cron = "1 * * * * *")
      * */
 
     /**
@@ -48,7 +47,8 @@ public class ScheduledTask extends ListenerAdapter {
      * lunes, miércoles y viernes
      * */
 
-    @Scheduled(cron = "1 01 08 * * MON,WED,FRI")
+    //@Scheduled(cron = "1 01 08 * * MON,WED,FRI")
+    @Scheduled(cron = "1 * * * * *")
     private void sendScheduledMessageOfDay() {
         Guild server = jda.getGuildById(dicordServer);
         if (server == null) {
