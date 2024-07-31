@@ -58,7 +58,7 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
   @Scheduled(cron = "2 * * * * *")
 ```
 - link de ayuda para configuracion del cron: [cron spring](https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions)
-- Para modificar el mensaje que aparece cuando se ejecuta la tarea programada modificar el retorno en el metodo **getDayOfWeek** solo retorna respuesta los dias (1,3,5) lunes miercoles y viernes respectivamente.
+- Para modificar el mensaje que aparece cuando se ejecuta la tarea programada modificar el retorno en el metodo **getDayOfWeek** solo retorna respuesta los dias (1, 3, 5) lunes miercoles y viernes respectivamente.
 ```
     public static int getDayOfWeek(){
         LocalDate currentDate = LocalDate.now();
@@ -71,6 +71,13 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 
 ``` shell
    mvn install -DskipTests=true 
+```
+
+#### para levantar el proyecto
+- abre una terminal desde la carpeta raiz del proyecto y ejecuta;
+
+``` shell
+   docker-compose up
 ```
 
 
