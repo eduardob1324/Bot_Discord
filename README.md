@@ -73,12 +73,14 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
    mvn install -DskipTests=true 
 ```
 
-#### para levantar el proyecto
+#### Para levantar el proyecto
 - abre una terminal desde la carpeta raiz del proyecto y ejecuta;
-
 ``` shell
    docker-compose up
 ```
+- una vez que la aplicacion este desplegada veras en Discord que el bot esta activo.
+
+#### para levantar el proyecto
 
 
 
