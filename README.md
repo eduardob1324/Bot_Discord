@@ -52,11 +52,20 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 ```
 - la tarea encargada de enviar los mensajes a los mienbros del servidos los dias lunes miercoles y viernes es: **sendScheduledMessageOfDay**
 - la tarea encargada de validar que los usuarios enviaron una respuesta es **sendScheduledUpdateResponseUser** en dado caso de que no respondan antes del siguiente envio de mensaje, los campos respuesta seran null.
+- Las tareas porgramadas estan programadas para ejecutarse cada 2 minutos.
 - para modificar el tiempo de ejecucion de las tarear programadas modificar el cron:
 ```
   @Scheduled(cron = "2 * * * * *")
 ```
 - link de ayuda para configuracion del cron: [cron spring](https://spring.io/blog/2020/11/10/new-in-spring-5-3-improved-cron-expressions)
+- Para modificar el mensaje que aparece cuando se ejecuta la tarea programada modificar el retorno en el metodo **getDayOfWeek**
+```
+    public static int getDayOfWeek(){
+        LocalDate currentDate = LocalDate.now();
+        //return currentDate.getDayOfWeek().getValue();
+        return 1;
+    }
+```
 
 #### Compilar el proyecto
 
