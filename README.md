@@ -16,7 +16,7 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 - **Viernes:** ¿Qué porcentaje de avance lograste en tu objetivo?
 
 ## Instalación y Configuración
-# reqerimientos
+### reqerimientos
 - JDK 17
 - mvn 3.9.8
 ## Uso
