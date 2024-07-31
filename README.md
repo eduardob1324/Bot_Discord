@@ -81,9 +81,9 @@ El Bot envía mensajes privados a los miembros del servidor los días lunes, mi�
 - una vez que la aplicacion este desplegada veras en Discord que el bot esta activo.
 
 ## Funcionalidades en desarrollo.
-- creacion de interface para poder crear eventos para que asistan los miembros de servidor.
-- integracion de listener para recepcion de mensajes con #
-- creacion de reportes para manejo de metricas.
+- Creación de interfaz para poder crear eventos a los que asistan los miembros del servidor.
+- Integración de listener para recepción de mensajes con #
+- Creación de reportes para manejo de métricas.
 
 
 
