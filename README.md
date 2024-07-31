@@ -35,11 +35,12 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
 ```
 
 ### Crear el servidor en discord
-- link de ayuda [Markdown Live Preview](https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor)
+- link de ayuda:  [crear un servidor](https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor)
 
 ### Crear el bot en discord
 - se pueden apoyar en los pasos 1 y 2 del siguiente link
-- link de ayuda https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord
+- link de ayuda: [crear un Bot] (https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord)
+- 
 
 ### se requiere modificar el archivo docker-compose.yml
 - el archivo se encuentra en la carpeta principal del proyecto
