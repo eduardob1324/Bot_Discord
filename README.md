@@ -34,5 +34,10 @@ El Bot envía mensajes privados a los usuarios los días lunes, miércoles y vie
    mvn install -DskipTests=true 
 ```
 
-### crar ek servidor en discord
+### Crear el servidor en discord
 - link de ayuda https://support.discord.com/hc/es/articles/204849977--C%C3%B3mo-creo-un-servidor
+
+### Crear el bot en discord
+- link de ayuda https://www.hostinger.mx/tutoriales/como-alojar-un-bot-de-discord
+
+
